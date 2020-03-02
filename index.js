@@ -3,7 +3,6 @@ function bill() {
     let circle = 2 * Math.PI * radius;
     console.log("Circumference of circle is: " + circle);
 
-
     document.getElementById("Circumference").innerHTML = 2 * Math.PI * radius;
     return false;
 
