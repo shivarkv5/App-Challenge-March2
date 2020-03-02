@@ -1,11 +1,10 @@
 function bill() {
     let radius = parseFloat(document.getElementById("total").value);
-    console.log(typeof totalIn);
-    var circle = 2 * Math.PI * radius;
+    let circle = 2 * Math.PI * radius;
+    console.log("Circumference of circle is: " + circle);
 
-    document.getElementById("tip").innerHTML = "$" + totals * rates / 100;
-    document.getElementById("tax").innerHTML = "$" + totals * 0.055;
-    document.getElementById("circumference").innerHTML = "" + (circle);
+
+    document.getElementById("Circumference").innerHTML = 2 * Math.PI * radius;
     return false;
 
 }
