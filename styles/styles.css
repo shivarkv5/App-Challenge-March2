@@ -1,0 +1,80 @@
+body {
+    background-color: lightgreen;
+    flex-basis: 100%;
+    font-family: Arial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 60px;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.bill {
+    color: black;
+    flex-basis: 60%;
+    max-width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label:first-of-type {
+    flex-basis: 25%;
+    order: 1;
+}
+
+input:first-of-type {
+    flex-basis: 70%;
+    order: 1;
+}
+
+.bill>* {
+    margin: 4px;
+}
+
+input[type=number] {
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid rgb(39, 37, 37) 1px;
+}
+
+label,
+input {
+    flex-basis: 50%;
+    order: 3;
+}
+
+#output-group {
+    flex-basis: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+}
+
+#output-group>* {
+    padding: 10px 0;
+    border: 1px;
+    flex-basis: 40%;
+    flex-wrap: wrap;
+}
+
+input[type=submit] {
+    flex-basis: 100%;
+    border: rgb(153, 153, 135);
+    font-size: 24px;
+    color: blue;
+}
